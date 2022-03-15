@@ -1,3 +1,40 @@
-#test {
-  color: red;
+main {
+  display: flex;
+  flex-direction: row;
+  margin: 3% 10%;
+  align-items: center;
+  justify-content: center;
+}
+
+.scores {
+  display: flex;
+  flex-direction: column;
+  margin: 1% 5%;
+  min-width: 200px;
+}
+
+.recentScores {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+table {
+  border: 1px solid #2d2d2d;
+}
+
+table :nth-child(even) {
+  background-color: rgb(230, 230, 230);
+}
+
+.input {
+  margin-bottom: 5%;
+}
+
+button {
+  background-color: white;
+  border: 1px solid #2d2d2d;
+  box-shadow: 3px 5px;
+  cursor: pointer;
 }

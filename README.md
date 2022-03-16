@@ -1,12 +1,13 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # LeaderBoard Set-UP
-This is a basic setup of a LeaderBoard.I used HTML and basic css for styling.
+In this activity the user is able to send and receive data from/to the Leaderboard API.
 
 ## Built With
 
 - HTML
 - CSS
+- JavaScript
 
 ## Getting Started
 

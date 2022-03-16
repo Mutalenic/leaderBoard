@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Boilerplate</title>
-  <script defer src="main.js"></script></head>
-  <body>
-    <div>
-      <h1 id="test">Hello World</h1>
-    </div>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicholas Learderboard</title>
+<script defer src="main.js"></script></head>
+<body>
+    <header>
+    <h1>Leaderboard</h1>
+    </header>
+    <main>
+        <section class="scores" id="scoresdisplay">
+            <div class="recentScores" id="recentScores">
+              <h3>Recent Scores</h3>
+              <button id="refresh">Refresh</button>
+            </div>
+            <ul id="scoreBoard"></ul>
+          </section>
+          <section class="input" id="input">
+            <div id="details"><h3>Add your Score</h3></div>
+            <div id="formdiv">
+              <form>
+                <input id="name" placeholder="Your name" type="text" aria-label="Name" required/>
+                <br>
+                <input id="score" placeholder="Your score" type="text" aria-label="score" required/>
+                <br>
+                <button class="submit-btn" id="submit" type="submit">Submit</button>
+              </form>
+            </div>
+          </section>
+
+    </main>
+</body>
 </html>

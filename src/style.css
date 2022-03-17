@@ -22,10 +22,16 @@ header {
 }
 
 main {
-  display: grid;
-  grid-template-columns: 3fr 2fr;
+  display: flex;
+  gap: 20%;
+  justify-content: flex-end;
   align-items: flex-start;
-  margin: 5%;
+  border: 1px solid;
+  margin: 0 4%;
+  padding: 0 -2%;
+  font-size: 1.5rem;
+  max-width: 100%;
+  padding: 0 -29px 0 0;
 }
 
 .scores {
@@ -43,7 +49,6 @@ main {
   align-items: center;
   margin: 0  62px 9px 0;
   padding: 8px 5px;
-  padding: 20 20 12px 0;
   background-color: #784825;
   border-radius: 1rem;
 }
@@ -74,11 +79,9 @@ main {
 }
 
 .input {
-  background-color: #9d5b2a9c;
   padding-top: 2%;
   border-radius: 1rem;
   text-align: center;
-  box-shadow: 0 0.5rem 1rem rgb(15 153 10 / 83%);
 }
 
 li {
@@ -95,17 +98,20 @@ li {
   padding-right: 20px;
 }
 
-input {
+form input {
   border: 1px solid #2d2d2d;
-  background-color: rgb(15 153 10 / 83%);
+  background-color: crimson;
+  box-shadow: 0 0.5rem 1rem rgb(15 153 10 / 83%);
   border-radius: 0.5rem;
   padding: 0.5rem;
-  width: 100%;
+  min-width: 200px;
   font-size: 1rem;
 }
 
 #submit {
-  width: fit-content;
+  width: 92%;
+  padding: 4%;
+  margin: 5%;
 }
 
 input::placeholder {
@@ -113,11 +119,10 @@ input::placeholder {
 }
 
 #scoreBoard {
-  display: flex;
-  flex-direction: column;
-  width: fit-content;
-  background-color: #9b599a;
-  box-shadow: 0 0.5rem 1rem #0e74ebed;
+  width: 168%;
+  box-shadow: 0 0.5rem 1rem #0003;
+  overflow: auto;
+  height: 70vh;
 }
 
 .scoreboard li {
@@ -138,33 +143,26 @@ input::placeholder {
   font-size: 40px;
 }
 
-@media (min-width: 768px) {
-  main {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    align-items: flex-start;
-  }
+.recentText {
+  font-size: 1.5rem;
+}
 
+@media (min-width: 768px) {
   .input {
     display: flex;
     flex-direction: column;
     margin-bottom: 0;
     align-items: center;
-    padding-top: 60%;
-  }
-
-
-  #scoreBoard {
-    width: fit-content;
-    background-color: crimson;
-    box-shadow: 0 0.5rem 1rem #0003;
-    border: 2px solid #0007;
   }
 
   main {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
     align-items: flex-start;
-    max-width: 768px;
+    font-size: 1.5rem;
+    max-width: 80%;
+    box-shadow: 0 0.15rem 0.61rem rgb(2 250 237);
+    border-radius: 1%;
+    margin-bottom: 2%;
+    overflow: visible;
+    height: 300vh;
   }
 }

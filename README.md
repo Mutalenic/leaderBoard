@@ -1,7 +1,14 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# LeaderBoard Set-UP
-In this activity the user is able to send and receive data from/to the Leaderboard API.
+# LeaderBoard
+
+## Description
+
+The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.
+
+- This is the page view:
+
+![Screenshot1](./src/images/Screenshot.png)
 
 ## Built With
 
@@ -37,7 +44,9 @@ And For tracking linter errors in JavaScript files run:
 
 `npx eslint .`
 
-## Authors
+## Live Demo
+
+## Author
 
  👤 **Nicholas Mutale** https://github.com/Mutalenic
  
@@ -50,3 +59,7 @@ Feel free to check the [https://github.com/Mutalenic/leaderBoard/issues]
 ## Show your support
 
 Give a ⭐️ if you like this project
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.

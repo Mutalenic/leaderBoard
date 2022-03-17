@@ -1,10 +1,10 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ([
 /* 0 */,
 /* 1 */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -55,6 +55,7 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /* 2 */
 /***/ ((module) => {
 
+"use strict";
 
 
 var stylesInDOM = [];
@@ -164,6 +165,7 @@ module.exports = function (list, options) {
 /* 3 */
 /***/ ((module) => {
 
+"use strict";
 
 
 /* istanbul ignore next  */
@@ -239,6 +241,7 @@ module.exports = domAPI;
 /* 4 */
 /***/ ((module) => {
 
+"use strict";
 
 
 var memo = {};
@@ -283,6 +286,7 @@ module.exports = insertBySelector;
 /* 5 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 
 
 /* istanbul ignore next  */
@@ -300,6 +304,7 @@ module.exports = setAttributesWithoutAttributes;
 /* 6 */
 /***/ ((module) => {
 
+"use strict";
 
 
 /* istanbul ignore next  */
@@ -316,6 +321,7 @@ module.exports = insertStyleElement;
 /* 7 */
 /***/ ((module) => {
 
+"use strict";
 
 
 /* istanbul ignore next  */
@@ -337,6 +343,7 @@ module.exports = styleTagTransform;
 /* 8 */
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -350,7 +357,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "#test {\r\n  color: red;\r\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "main {\r\n  display: flex;\r\n  flex-direction: row;\r\n  margin: 3% 10%;\r\n  align-items: center;\r\n  justify-content: center;\r\n}\r\n\r\n.scores {\r\n  display: flex;\r\n  flex-direction: column;\r\n  margin: 1% 5%;\r\n  min-width: 200px;\r\n}\r\n\r\n.recentScores {\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n}\r\n\r\ntable {\r\n  border: 1px solid #2d2d2d;\r\n}\r\n\r\ntable :nth-child(even) {\r\n  background-color: rgb(230, 230, 230);\r\n}\r\n\r\n.input {\r\n  margin-bottom: 5%;\r\n}\r\n\r\nbutton {\r\n  background-color: white;\r\n  border: 1px solid #2d2d2d;\r\n  box-shadow: 3px 5px;\r\n  cursor: pointer;\r\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -359,6 +366,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, "#test {\r\n  color: red;\r\n}\r\n", ""
 /* 9 */
 /***/ ((module) => {
 
+"use strict";
 
 
 module.exports = function (i) {
@@ -369,6 +377,7 @@ module.exports = function (i) {
 /* 10 */
 /***/ ((module) => {
 
+"use strict";
 
 
 /*
@@ -474,18 +483,14 @@ module.exports = function (cssWithMappingToString) {
 
 /***/ }),
 /* 11 */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (() => {
 
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-const component = () => {
-  const element = document.getElementById('test');
-  element.innerHTML = 'Welcome';
-};
+// const component = () => {
+//   const element = document.getElementById('test');
+//   element.innerHTML = 'Welcome';
+// };
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component);
+// export default component;
 
 
 /***/ })
@@ -558,15 +563,17 @@ const component = () => {
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
 (() => {
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var _modules_component_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
+/* harmony import */ var _modules_component_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modules_component_js__WEBPACK_IMPORTED_MODULE_1__);
 
 
 
-window.onload = (0,_modules_component_js__WEBPACK_IMPORTED_MODULE_1__["default"])();
+window.onload = _modules_component_js__WEBPACK_IMPORTED_MODULE_1___default()();
 
 })();
 

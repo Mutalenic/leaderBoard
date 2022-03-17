@@ -51,6 +51,9 @@ And For tracking linter errors in JavaScript files run:
  👤 **Nicholas Mutale** https://github.com/Mutalenic
  
  - GitHub: [@GitHub/Mutalenic](https://github.com/Mutalenic)
+ - LinkedIn: (https://www.linkedin.com/in/nicholas-mutale-715714124/)
+ - Twitter: (https://twitter.com/nicomutale)
+
 
 ## Contributions, issues, and feature requests are welcome!
 

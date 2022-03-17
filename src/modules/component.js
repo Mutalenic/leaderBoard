@@ -3,8 +3,13 @@ const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/game
 
 const loadScores = (data) => {
   ul.innerHTML = '';
-  // eslint-disable-next-line array-callback-return
-  data.map((scores) => { ul.innerHTML += `<li>${scores.user}:${scores.score}</li>`; });
+  data.map(({ user, score }) => {
+    const scorelist = document.createElement('li');
+    scorelist.classList.add('score-list');
+    scorelist.innerHTML = `<span class="span-player"><i class="fa fa-user fa-2x"></i>${user}</span> <span>${score}</span>`;
+    ul.appendChild(scorelist);
+    return 0;
+  });
 };
 
 const getData = async () => {

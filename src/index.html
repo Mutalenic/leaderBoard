@@ -3,29 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
     <title>Nicholas Learderboard</title>
 </head>
 <body>
     <header>
-    <h1>Leaderboard</h1>
+    <h1 class="headerTitle">LEADERBOARD</h1>
     </header>
     <main>
         <section class="scores" id="scoresdisplay">
             <div class="recentScores" id="recentScores">
-              <h3>Recent Scores</h3>
-              <button id="refresh">Refresh</button>
+              <h3 class="recentText">Recent Scores</h3>
+              <button id="refresh" type="reset" class="btn">Refresh</button>
             </div>
-            <ul id="scoreBoard"></ul>
+            <ul id="scoreBoard" class="scoreboard"></ul>
           </section>
           <section class="input" id="input">
-            <div id="details"><h3>Add your Score</h3></div>
+            <h3 class="addText">Add your Score</h3>
             <div id="formdiv">
-              <form id="form">
-                <input id="name" placeholder="Your name" type="text" aria-label="Name" required/>
+              <form id="form" class="form-data">
+                <input id="name" placeholder="Your name" type="text" aria-label="Name" required maxlength="20"/>
                 <br>
-                <input id="score" placeholder="Your score" type="text" aria-label="score" required/>
+                <input id="score" placeholder="Your score" type="text" aria-label="score" required />
                 <br>
-                <button class="submit-btn" id="submit" type="submit">Submit</button>
+                <button class="btn" id="submit" type="submit">Submit</button>
               </form>
             </div>
           </section>

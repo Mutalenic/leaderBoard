@@ -45,14 +45,15 @@ And For tracking linter errors in JavaScript files run:
 `npx eslint .`
 
 ## Live Demo
+[LeaderBoard](https://mutalenic.github.io/leaderBoard/)
 
 ## Author
 
- 👤 **Nicholas Mutale** https://github.com/Mutalenic
+ 👤 **Nicholas Mutale**
  
  - GitHub: [@GitHub/Mutalenic](https://github.com/Mutalenic)
- - LinkedIn: (https://www.linkedin.com/in/nicholas-mutale-715714124/)
- - Twitter: (https://twitter.com/nicomutale)
+ - LinkedIn: [@LinkenIn/nicholas-mutale](https://www.linkedin.com/in/nicholas-mutale-715714124/)
+ - Twitter: [@Twitter/nicomutale](https://twitter.com/nicomutale)
 
 
 ## Contributions, issues, and feature requests are welcome!
